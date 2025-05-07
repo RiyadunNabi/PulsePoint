@@ -1,0 +1,106 @@
+
+Table users {
+  user_id integer [primary key]
+  username varchar
+  password varchar
+  email varchar
+  user_type varchar
+  profile_picture varchar
+  created_at timestamp
+  last_updated timestamp
+}
+
+Table admins {
+  admin_id integer [primary key]
+  user_id integer [not null, ref: > users.user_id]
+  first_name varchar
+  last_name varchar
+  contact_no varchar
+}
+
+Table doctors {
+  doctor_id integer [primary key]
+  user_id integer [not null, ref: > users.user_id]
+  department_id integer [ref: > department.department_id]
+  first_name varchar
+  last_name varchar
+  specialization varchar
+  qualification varchar
+  contact_no varchar
+  experience_years integer
+  gender varchar
+  average_rating float
+}
+
+Table patients {
+  patient_id integer [primary key]
+  user_id integer [not null, ref: > users.user_id]
+  first_name varchar
+  last_name varchar
+  date_of_birth date
+  gender varchar
+  blood_group varchar
+  contact_no varchar
+  address varchar
+  medical_history text
+}
+
+Table appointments {
+  appointment_id integer [primary key]
+  patient_id integer [ref: > patients.patient_id]
+  doctor_id integer [ref: > doctors.doctor_id]
+  appointment_date timestamp
+  status varchar
+  reason varchar
+  created_at timestamp
+}
+
+Table department {
+  department_id integer [primary key]
+  department_name varchar
+  description text
+}
+
+Table schedules {
+  schedule_id integer [primary key]
+  doctor_id integer [ref: > doctors.doctor_id]
+  day_of_week varchar
+  start_time time
+  end_time time
+  max_appointments integer
+}
+
+Table medical_records {
+  record_id integer [primary key]
+  appointment_id integer [ref: > appointments.appointment_id]
+  diagnosis varchar
+  notes text
+  created_at timestamp
+}
+
+Table prescriptions {
+  prescription_id integer [primary key]
+  record_id integer [ref: > medical_records.record_id]
+  medicine_name varchar
+  dosage varchar
+  frequency varchar
+  duration varchar
+  instructions text
+  prescribed_date timestamp
+}
+
+Table doctor_reviews {
+  review_id integer [primary key]
+  doctor_id integer [ref: > doctors.doctor_id]
+  patient_id integer [ref: > patients.patient_id]
+  appointment_id integer [ref: > appointments.appointment_id]
+  rating integer
+  comments text
+  review_date timestamp
+}
+
+
+
+
+
+Ref: "admins"."first_name" < "admins"."admin_id"
