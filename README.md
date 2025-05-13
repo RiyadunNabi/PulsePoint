@@ -63,7 +63,7 @@ JOIN DOCTOR d ON s.doctor_id = d.doctor_id;</code></pre>
     <h2>📐 ERD Preview</h2>
     <p>Find a full ERD in the presentation and visual formats below:</p>
     <ul>
-      <li><a href=".ER_Diagram/ER_Diagram.pdf">📎 ERD Presentation (PDF)</a></li>
+      <li><a href="./ER_Diagram/ER_Diagram.pdf">📎 ERD Presentation (PDF)</a></li>
     </ul>
   </section>
 
