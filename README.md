@@ -1,50 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PulsPoint - Outdoor Patient Management System</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0 1rem;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background-color: #0066cc;
-      color: white;
-      padding: 1rem;
-      text-align: center;
-    }
-    section {
-      margin: 2rem 0;
-    }
-    h1, h2, h3 {
-      color: #0066cc;
-    }
-    code {
-      background: #eee;
-      padding: 2px 4px;
-      border-radius: 4px;
-    }
-    pre {
-      background: #eee;
-      padding: 1rem;
-      overflow-x: auto;
-    }
-    ul {
-      padding-left: 1.2rem;
-    }
-    .footer {
-      text-align: center;
-      font-size: 0.9rem;
-      color: #777;
-      margin: 4rem 0 2rem;
-    }
-  </style>
-</head>
+
 <body>
   <header>
     <h1>💊 PulsPoint: An Outdoor Patient Management System</h1>
