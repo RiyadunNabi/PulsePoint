@@ -63,11 +63,10 @@ JOIN DOCTOR d ON s.doctor_id = d.doctor_id;</code></pre>
     <h2>📐 ERD Preview</h2>
     <p>Find a full ERD in the presentation and visual formats below:</p>
     <ul>
-      <li><a href="./erd/PulsPoint_ERD_Presentation.pptx">📎 ERD Presentation (PPTX)</a></li>
-      <li><a href="./erd/pulspoint-erd-diagram.png">🖼️ Visual ERD (PNG)</a></li>
+      <li><a href=".ER_Diagram/ER_Diagram.pdf">📎 ERD Presentation (PDF)</a></li>
     </ul>
   </section>
-
+https://github.com/RiyadunNabi/PulsePoint/blob/main/ER_Diagram/Blank%20board%20(1).pdf
   <section>
     <h2>📘 License</h2>
     <p>This project is developed for educational use. Contributions are welcome.</p>
