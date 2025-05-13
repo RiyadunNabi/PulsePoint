@@ -19,7 +19,7 @@
       <li>🧠 Symptom Checker – Predict disease using symptoms</li>
     </ul>
   </section>
-
+<!--
   <section>
     <h2>📁 Project Structure</h2>
     <pre>
@@ -38,7 +38,7 @@
 └── README.md
     </pre>
   </section>
-
+--
   <section>
     <h2>⚙️ Getting Started</h2>
     <ol>
@@ -49,7 +49,7 @@
       <li>Run sample queries from <code>queries.sql</code></li>
     </ol>
   </section>
-
+--
   <section>
     <h2>🧾 Sample Query</h2>
     <pre><code>SELECT p.first_name, p.last_name, a.appointment_date, d.first_name AS doctor_name
@@ -58,7 +58,7 @@ JOIN PATIENT p ON a.patient_id = p.patient_id
 JOIN SCHEDULE s ON a.schedule_id = s.schedule_id
 JOIN DOCTOR d ON s.doctor_id = d.doctor_id;</code></pre>
   </section>
-
+-->
   <section>
     <h2>📐 ERD Preview</h2>
     <p>Find a full ERD in the presentation and visual formats below:</p>
@@ -76,7 +76,7 @@ JOIN DOCTOR d ON s.doctor_id = d.doctor_id;</code></pre>
   <section>
     <h2>🙋‍♂️ Author</h2>
     <p><strong>Riyadun Nabi</strong><br />
-       📧 your-email@example.com<br />
+       📧 riyadunnabi@gmail.com<br />
        🎓 BUET (Bangladesh University of Engineering and Technology)</p>
   </section>
 
