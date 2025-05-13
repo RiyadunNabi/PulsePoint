@@ -75,6 +75,7 @@ JOIN DOCTOR d ON s.doctor_id = d.doctor_id;</code></pre>
   <section>
     <h2>🙋‍♂️ Author</h2>
     <p><strong>Riyadun Nabi</strong><br />
+    <p><strong>Fardin Fuad</strong><br />
        📧 riyadunnabi@gmail.com<br />
        🎓 BUET (Bangladesh University of Engineering and Technology)</p>
   </section>
